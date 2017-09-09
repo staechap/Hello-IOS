@@ -1,26 +1,74 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hello_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ศุภชัย" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vML-BY-1UA">
+                                <rect key="frame" x="113.5" y="95" width="93" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" red="1" green="0.32079085023029275" blue="0.069312827223883322" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="24"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8A-gh-WYI">
+                                <rect key="frame" x="16" y="215" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.9350169201006524" green="1" blue="0.20175808046413257" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="หา APP">
+                                    <color key="titleShadowColor" red="1" green="0.32079085019999998" blue="0.069312827219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HZu-dz-Aat">
+                                <rect key="frame" x="60" y="155" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2K8-EZ-kYH"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HZu-dz-Aat" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5YH-ER-gUG"/>
+                            <constraint firstItem="HZu-dz-Aat" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="66I-RV-L0b"/>
+                            <constraint firstItem="HZu-dz-Aat" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7At-dI-q0x"/>
+                            <constraint firstItem="HZu-dz-Aat" firstAttribute="top" secondItem="vML-BY-1UA" secondAttribute="bottom" constant="15.5" id="7dt-fJ-TXp"/>
+                            <constraint firstItem="vML-BY-1UA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="HV4-92-2p6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i8A-gh-WYI" secondAttribute="trailing" id="Qdn-gZ-nI6"/>
+                            <constraint firstItem="i8A-gh-WYI" firstAttribute="top" secondItem="HZu-dz-Aat" secondAttribute="bottom" constant="30" id="Rgz-dn-yry"/>
+                            <constraint firstItem="HZu-dz-Aat" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VhS-Yb-FrY"/>
+                            <constraint firstItem="HZu-dz-Aat" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XrF-BG-enL"/>
+                            <constraint firstItem="HZu-dz-Aat" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YsC-Hz-UK5"/>
+                            <constraint firstItem="i8A-gh-WYI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="b2x-3Q-7e6"/>
+                            <constraint firstItem="vML-BY-1UA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fiA-Gw-xEL"/>
+                            <constraint firstItem="HZu-dz-Aat" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jgb-jv-zDi"/>
+                            <constraint firstItem="HZu-dz-Aat" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qw9-lu-Ns6"/>
+                            <constraint firstItem="i8A-gh-WYI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wsv-T4-Gs6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="121.88905547226388"/>
         </scene>
     </scenes>
 </document>
